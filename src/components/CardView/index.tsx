@@ -28,6 +28,8 @@ export function CardView() {
     <View style={styles.imgContainer}>
         {renderLogoBox()}
         <Divider/>
-       
+        {renderCarDetails()}
+        
+    </View>
   );
 }
