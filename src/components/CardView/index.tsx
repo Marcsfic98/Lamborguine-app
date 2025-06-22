@@ -30,6 +30,7 @@ export function CardView() {
         <Divider/>
         {renderCarDetails()}
         {renderCarImage()}
+        <Divider/>
         
     </View>
   );
