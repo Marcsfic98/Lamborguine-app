@@ -22,6 +22,14 @@ export function CardView() {
   const renderCarImage = () => (
     <Image style={styles.image} source={{uri:`${CAR_ASSENTS_BASE_URL}5.png`}} />
   )
+
+  const renderPriceControls = () => (
+    <View style={styles.priceLabalContainer}>
+      <Button title='<' color={'#fff'}  onPress={()=>{}}/>
+      <Text style={styles.priceLabel}>VALOR</Text>
+      <Button title='>' color={'#fff'} onPress={()=>{}}/>
+    </View>
+  )
   
 
   return (
@@ -32,6 +40,7 @@ export function CardView() {
         {renderCarImage()}
         <Divider/>
         <BuyButton/>
+        {renderPriceControls()}
     </View>
   );
 }
