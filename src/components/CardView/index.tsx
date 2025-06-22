@@ -31,7 +31,7 @@ export function CardView() {
         {renderCarDetails()}
         {renderCarImage()}
         <Divider/>
-        
+        <BuyButton/>
     </View>
   );
 }
