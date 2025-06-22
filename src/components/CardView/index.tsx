@@ -27,7 +27,7 @@ export function CardView() {
   return (
     <View style={styles.imgContainer}>
         {renderLogoBox()}
-      
-    </View>
+        <Divider/>
+       
   );
 }
