@@ -17,7 +17,7 @@ export function CardView() {
       await loadCarData(1, setCarData);
       
       
-    })
+    })();
   },[])
 
   const renderLogoBox = () => (
