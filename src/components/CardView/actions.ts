@@ -5,25 +5,29 @@ export const loadCarData = async(id:number , setCarData:React.Dispatch<React.Set
     const response =  await fetchGetCarData(id);
     try{
         if(response){
-            setCarData(response)
+            setCarData(response);
             
         }
     }catch(error){
         console.log(error);
-        setCarData:null
+        setCarData(null);
     }
 };
 
 
 export const handlePreviousItem = async(carData: CarModel | null,setCarData: React.Dispatch<React.SetStateAction<CarModel | null>>) =>{
+    let response = null;
+
     try{
         if(carData && carData?.id > 1){
-            const response = await fetchGetCarData(carData.id -1)
+            response = await fetchGetCarData(carData.id - 1)
 
-             if(response){
-            setCarData(response)
-             }
+             
         }
+
+        if(response){
+            setCarData(response)
+         }
        
         
     }catch(error){
@@ -33,15 +37,18 @@ export const handlePreviousItem = async(carData: CarModel | null,setCarData: Rea
 };
 
 export const handleNextIten = async(carData: CarModel | null,setCarData: React.Dispatch<React.SetStateAction<CarModel | null>>) =>{
+    let response = null;
 
-     try{
+    try{
         if(carData && carData?.id < 10){
-            const response = await fetchGetCarData(carData.id +1)
+            response = await fetchGetCarData(carData.id + 1)
 
-             if(response){
-            setCarData(response)
-             }
+             
         }
+
+        if(response){
+            setCarData(response)
+         }
        
         
     }catch(error){

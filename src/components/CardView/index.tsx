@@ -38,9 +38,9 @@ export function CardView() {
 
   const renderPriceControls = () => (
     <View style={styles.priceLabalContainer}>
-      <Button title='<' color={'#fff'}  onPress={()=>{()=>handlePreviousItem(carData,setCarData)}}/>
+      <Button title='<' color={'#fff'}  onPress={()=>handlePreviousItem(carData,setCarData)}/>
       <Text style={styles.priceLabel}>{carData?.price}</Text>
-      <Button title='>' color={'#fff'} onPress={()=>{()=>handleNextIten(carData,setCarData)}}/>
+      <Button title='>' color={'#fff'} onPress={()=>handleNextIten(carData,setCarData)}/>
     </View>
   )
   
