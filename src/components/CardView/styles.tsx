@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
   priceLabalContainer:{
     flexDirection:"row",
     justifyContent:"space-between",
-    
+    paddingBottom:10,
     alignItems:"center",
    
     padding:10
